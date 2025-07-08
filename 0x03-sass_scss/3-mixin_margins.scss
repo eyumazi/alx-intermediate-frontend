@@ -1,0 +1,19 @@
+@mixin margining($value:10px)
+{
+   body{
+      margin-left: $value;
+      margin-right: $value;
+   }
+   div{
+      margin-left: $value;
+      margin-right: $value;
+   }
+}
+body
+{
+   @include margining;
+}
+div
+{
+   @include margining;
+}
